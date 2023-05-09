@@ -9,22 +9,39 @@
 </head>
 <body> <!-- Comments-->
     <header class="header">
-        <div class="header__left-section">
-            <div class="header__left-section--author"><a href="#apadilla"><img src="images/Ap.jpg" alt="author-photo"></a></div>
-            <div class="header__left-section--author-name"><a href="#apadilla">Alvaro Padilla</a></div>
+        <div class="header__leftSection">
+            <div class="header__leftSection--logoContainer">
+            <!--<div class="header__leftSection--author">-->
+                <a href="#apadilla"><img src="images/profile-pic.png" alt="author-photo"></a>
+            <!--<div class="header__leftSection--author-name">-->
+            </div>
+            <a href="#apadilla"><span>ALVARO PADILLA</span></a>
         </div >
-        <div class="header__right-section">
-            <ul class="header__right-section--menu">
+        <div class="header__rightSection">
+            <ul class="header__rightSection--mainMenu">
                 <li><a href="https://alvaroist.github.io">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contacto">CONTACT</a></li>
             </ul>
+            <div class="header__smIcons">
+                <img src="alv-menu.svg" alt="" class="header__smIcons--ham">
+                <img src="alv-menu-close.svg" alt="" class="header__smIcons--close d-none">
+            </div>
+        </div>
+        <div class="header__smallmenu">
+            <ul>
+                <li class="header__smallmenu-link"><a href="https://alvaroist.github.io">HOME</a></li>
+                <li class="header__smallmenu-link"><a href="#about">ABOUT</a></li>
+                <li class="header__smallmenu-link"><a href="#projects">PROJECTS</a></li>
+                <li class="header__smallmenu-link"><a href="#contacto">CONTACT</a></li>
+            </ul>
         </div>
     </header>
+    
     <a name="apadilla"></a>
     <section class="introduction">
-        <div class="introduction_greeting">HEY, I'M ALVARO PADILLA</div>
+        <div class="introduction__greeting">HEY, I'M ALVARO PADILLA</div>
         <div class="social-bar">
             <li><a href="https://www.linkedin.com/in/alvaro-padillac/" target="_blank"><img src="images/linkedin-dark.svg"></a></li>
             <li><a href="https://github.com/Alvaroist" target="_blank"><img src="images/github-dark.svg"></a></li>
@@ -32,18 +49,19 @@
             <li><a href="https://www.youtube.com/@alvaroist" target="_blank"><img src="images/yt-dark.svg"></a></li>
             <li><a href="https://dev.to/alvaroist" target="_blank"><img src="images/book-dark.svg"></a></li>
         </div>
-        <div class="introduction_intro-text"><p>A frontend focused Web Developer building the Frontend of Websites Applications <br> that leads to the success of the overall products</p></div>
+        <div class="introduction_introText"><p>A frontend focused Web Developer building the Frontend of Websites Applications <br> that leads to the success of the overall products</p></div>
         <div>
             <input type="button" name="projects" value="PROJECTS">
         </div>
-        <div class="introduction__mouse-scroll">
+        <div class="introduction__mouseScroll">
             <div class="mouse"></div>
         </div>
     </section>
+    
     <a name="about"></a>
     <section class="about-me">
         <div class="about-me_title"><span>ABOUT ME</span></br>
-        <p>Here you will find more information about me, what I do, and my current skills mostly<br> in terms of programming and technology</p>
+            <p>Here you will find more information about me, what I do, and my current skills mostly<br> in terms of programming and technology</p>
         </div>
         <div class="about-me_description">
             <div class="about-me_description__know-me">
@@ -76,7 +94,7 @@
         <div class="projects__container">
             <div class="projects_one"><a href="https://alvaroist.github.io/chrono"><img src="images/chronometer.png" alt=""></a></div>
             <div class="projects_two"><a href="https://alvaroist.github.io/drawingLines/"><img src="images/drawlines.png" alt="" width="350" height="390"></a></div>
-            <div class="projects_three"><a href="https://alvaroist.github.io/myFarm"><img src="images/myfarm.png" alt="" width="385" height="385"></a></div>
+            <div class="projects_three"><a href="https://alvaroist.github.io/encrypt"><img src="images/encrypt.png" alt="" width="385" height="385"></a></div>
         </div>
     </section>
     <a name="contacto"></a>
@@ -88,39 +106,41 @@
             <form class="contact__form" action="" method="POST">
                 <br>
                 <div class="contact__form-field">
-                <label class="contact__form-label" for="nombre">Nombre</label><br/>
-                <input type="text" id="nombre" class="contact__form-input" name="nombre" value="" size="105" placeholder="Enter your name" />
+                    <label class="contact__form-label" for="nombre">Nombre</label><br/>
+                    <input type="text" id="nombre" class="contact__form-input" name="nombre" value="" size="97" placeholder="Enter your name" />
                 </div>
                 <div class="contact__form-field">
-                <label class="contact__form-label" for="email">Email</label><br/>
-                <input type="text" id="mail" class="contact__form-input"name="email" value="" placeholder="Enter your Email" size="105"/>
+                    <label class="contact__form-label" for="email">Email</label><br/>
+                    <input type="text" id="mail" class="contact__form-input"name="email" value="" placeholder="Enter your Email" size="97"/>
                 </div>
                 <div class="contact__form-field">
-                <label class="contact__form-label" for="message">Message</label><br/>
-                <textarea class="contact__form-input" placeholder="Enter your message" required="" cols="93" rows="20" name="message"></textarea>
+                    <label class="contact__form-label" for="message">Message</label><br/>
+                    <textarea class="contact__form-input" placeholder="Enter your message" required="" cols="98" rows="20" name="message"></textarea>
+                    <input type="submit" class="contact__form-submit" value="Submit" />
+                    <br/><br/>
                 </div>
-                <input class="contact__form-submit" type="submit" value="Submit" />
-                <br/><br/>
             </form>
     </section>
     <section class="footer">
-        <div class="footer_upper-section">
-            <div class="footer_upper-section__author-desc"><span>ALVARO PADILLA</span>
-                <p>A Frontend Web Developer building the Frontend of websites and Web Applications that leads to the succes of the overall product</p>
+        <div class="footer__container">
+            <div class="footer__upperSection--authorDesc"><span>ALVARO PADILLA</span>
+                    <p>A Frontend Web Developer building the Frontend of websites and Web Applications that leads to the succes of the overall product</p>
             </div>
-            <div class="footer_upper-section__social">
-                <h3>SOCIAL</h3>
-                <div><a href=""><img src="images/linkedin-ico.png"></a></div>
-                <div><a href=""><img src="images/github-ico.png"></a></div>
-                <div><a href=""><img src="images/twitter-ico.png"></a></div>
-                <div><a href=""><img src="images/yt-ico.png"></a></div>
-                <div><a href=""><img src="images/blog-ico.png"></a></div>
+            <div class="footer__upperSection--social">
+                    <h3>SOCIAL</h3>
+                    <div class="footer__upperSection--socialicons">
+                        <div><a href=""><img src="images/linkedin-ico.png"></a></div>
+                        <div><a href=""><img src="images/github-ico.png"></a></div>
+                        <div><a href=""><img src="images/twitter-ico.png"></a></div>
+                        <div><a href=""><img src="images/yt-ico.png"></a></div>
+                        <div><a href=""><img src="images/blog-ico.png"></a></div>
+                    </div>
             </div>
-        </div>
-        <div class="footer_copyright">
-            <div><hr></hr><br>Copyright 2023. Made by Alvaro Padilla</div>
+            <div class="footer__copyright">
+                <div><hr></hr><br>Copyright 2023. Made by Alvaro Padilla</div>
+            </div>
         </div>
     </section>
-    <script src="menu.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
