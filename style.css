@@ -55,7 +55,7 @@ a:hover{color: #facf0f}
     margin-top: 35px;
 }
 
-@media only screen and (max-width:37.5em){
+@media only screen and (max-width:36.5em){
     .header__rightSection--mainMenu{display:none}
 }
 
@@ -78,7 +78,7 @@ a:hover{color: #facf0f}
     display: none;
 }
 
-@media only screen and (max-width:37.5em){
+@media only screen and (max-width:27em){
     .header__smIcons{display: block};
 }
 
@@ -95,7 +95,7 @@ a:hover{color: #facf0f}
     opacity:0;
 }
 
-@media only screen and (max-width: 37.5em){
+@media only screen and (max-width: 36em){
     .header__smallmenu--active{
         visibility: visible;
         opacity: 1;
@@ -230,21 +230,15 @@ a:hover{color: #facf0f}
 
 .about-me_description{
     width: 100%;
-    border-style: dotted;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.about-me_description div{
-  /*  box-sizing: border-box;*/
 }
 
 .about-me_description__know-me{
     width: 650px;
     text-align: justify;
     font-size: 18px;
-    border-style: dotted;
 }
 
 .about-me_description__know-me p{
@@ -276,7 +270,6 @@ a:hover{color: #facf0f}
 
 .about-me_description__myskills{
     width: 650px;
-    border-style: dotted;
 }
 
 /* Introduction section
