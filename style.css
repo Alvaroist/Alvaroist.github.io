@@ -55,7 +55,7 @@ a:hover{color: #facf0f}
     margin-top: 35px;
 }
 
-@media only screen and (max-width:36.5em){
+@media only screen and (max-width: 37em){
     .header__rightSection--mainMenu{display:none}
 }
 
@@ -72,13 +72,15 @@ a:hover{color: #facf0f}
     display: none;
     text-align: center;
     margin-top: 30px;
+    margin-right: 30px;
+    border-style: dotted;
 }
 
 .d-none{
     display: none;
 }
 
-@media only screen and (max-width:27em){
+@media only screen and (max-width:37em){
     .header__smIcons{display: block};
 }
 
@@ -95,7 +97,7 @@ a:hover{color: #facf0f}
     opacity:0;
 }
 
-@media only screen and (max-width: 36em){
+@media only screen and (max-width: 37em){
     .header__smallmenu--active{
         visibility: visible;
         opacity: 1;
