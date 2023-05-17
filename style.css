@@ -5,8 +5,8 @@
 
 body{
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(240, 236, 234);
     line-height: 1.2;
+    background-color: #f5f5f5;
     margin:0;
     padding: 0;
 }
@@ -19,61 +19,52 @@ a:hover{color: #facf0f}
 --------------------------------------------------------------------------*/
 
 .header{
-    position:fixed;
     width: 100%;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: medium;
     height: 85px;
     background-color: #fff;
-    display: flex;
-    z-index: 1000;
+    position: fixed;
+    cursor: pointer;
+    z-index: 1000;   
 }
 
-.header__leftSection{
-    width: 680px;
+.header__container{
+    font-weight: bold;
+    font-size: medium;
     display: flex;
-    align-items: center;
-}
-
-.header__leftSection--logoContainer img{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 8px 10px 2px 35px;
+    justify-content: center;
 }
 
 /*
     Main menu, smal icons and small menu 
  */
  .header__rightSection{
-    width: 650px;
-    float: right;
+    width: 740px;
+    display: flex;
+    justify-content: right;
  }
+
 .header__rightSection--mainMenu{
+    width: 620px;
     display: flex;
     margin-top: 35px;
 }
 
 @media only screen and (max-width: 37em){
-    .header__rightSection--mainMenu{display:none}
+    .header__rightSection--mainMenu{display:none};
 }
 
 .header__rightSection--mainMenu li{
     list-style: none;
-    margin-left: 65px;
+    margin-left: 55px;
     letter-spacing: 1px;
 }
 
 .header__smIcons{
-    width: 70px;
+    width: 65px;
     height: 30px;
-    float: right;
     display: none;
     text-align: center;
-    margin-top: 30px;
-    margin-right: 30px;
-    border-style: dotted;
+    margin-top: 25px;
 }
 
 .d-none{
@@ -84,10 +75,8 @@ a:hover{color: #facf0f}
     .header__smIcons{display: block};
 }
 
-.header__smallmenu{
-    position: absolute;
+.header__smallmenu{    
     width: 100%;
-    top: 100%;
     box-shadow:0 5px 5px 0 rgba(0,0,0,.1);
     visibility: hidden;
 }
@@ -117,6 +106,18 @@ a:hover{color: #facf0f}
     margin:0;
 }
 
+.header__leftSection{
+    width: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.header__leftSection--logoContainer img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 8px 10px 2px 35px;
+}
 
 /* Social bar
 -------------------------------------------------------------------------*/
@@ -142,18 +143,18 @@ a:hover{color: #facf0f}
 -------------------------------------------------------------------------*/
 .introduction{
     position: relative;
+    width: 100%;
     height: 1000px;
-    background-image:url("./images/background.jpg");
     text-align: center;
 }
 
-@media only screen and (max-width:56.25em){
+@media only screen and (max-width: 37em){
     .introduction{
         height: 700px;
     }
 }
 
-.introduction input, .about-me_description__know-me input, .contact__form-submit{
+.introduction input, .about-me_description__know-me input, .contact__form-submit-button{
     width: 250px;
     height: 50px;
     font-size: 20px;
@@ -216,6 +217,7 @@ a:hover{color: #facf0f}
 }
 
 .about-me{
+    width: 100%;
     margin-top: 100px;
 }
 
@@ -276,6 +278,9 @@ a:hover{color: #facf0f}
 
 /* Introduction section
 -------------------------------------------------------------------------*/
+.projects{
+    width: 100%;
+}
 
 .projects h2{
     margin-top: 150px;
@@ -308,6 +313,7 @@ a:hover{color: #facf0f}
 --------------------------------------------------------------------------*/
 
 .contact{
+    width: 100%;
     text-align: center;
     margin-top: 190px;
 }
@@ -319,43 +325,59 @@ a:hover{color: #facf0f}
 
 .contact__form{
     background-color: #fff;
+    border-radius: 5px;
     width: 820px;
     text-align: left;
-    margin: auto;
+    margin:5rem auto 0 auto;
     box-shadow:0 5px 5px 0 rgba(0,0,0,.1);
 }
 
-@media only screen and (max-width:37.5em){
-    .contact__form-input{width: 350px;}
-    .contact__form{width: 450px;}
+.contact__form-submit{
+    width: 760px;
+    height: 85px;
+    text-align: right;
+    margin: auto;
 }
 
-.contact__form-submit{
-    margin-top: 20px;
-    float: right;
+@media only screen and (max-width:37em){
+    .contact__form{width: 95%;}
+    .contact__form-submit{text-align: center; width: 100%}
+    .contact__form-input{width: 85%;}
+    .contact__form-field{width: 85%;}
+    .contact__form-label{width:95%}
 }
 
 .contact__form-field{
-    margin: 40px;
+    width: 94%;
+    margin: auto;
 }
 
-.contact__form-input, textarea{
-    background-color: #f0f0f0;
-    border-radius: 5px;
+.contact__form-input{
+    
+    margin: auto;
+    width: 95%;
+    line-height: 2;
+    /*padding: 15px;*/
     font-weight: 600;
-    color: #333;
-    padding: 1.2rem;
     border: 1px solid #ebebeb;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
 
+textarea{
+    resize: none;
+}
 .contact__form-label{
-    margin-bottom: 20px;
+    color:#666;
+    font-weight: 700;
+    /*display: block;*/
 }
 
 /* footer
 --------------------------------------------------------------------------*/
 
 .footer{
+    width: 100%;
     text-align: left;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -382,6 +404,12 @@ a:hover{color: #facf0f}
     font-weight: 600;
     padding: 50px;
     width: 610px;  
+}
+
+@media only screen and (max-width:37em){
+    .footer__container{
+        width: 340px;
+    }
 }
 
 .footer__upperSection--socialicons{

@@ -1,4 +1,3 @@
-// ---
 const hamMenuBtn = document.querySelector('.header__smIcons')
 const smMenu = document.querySelector('.header__smallmenu')
 const mainMenuBtn = document.querySelector('.header__smIcons--ham')
