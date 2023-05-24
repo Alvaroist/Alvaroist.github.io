@@ -2,7 +2,6 @@
 -------------------------------------------------------------------------*/
 /* Global
 -------------------------------------------------------------------------*/
-
 body{
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.2;
@@ -20,18 +19,19 @@ a:hover{color: #facf0f}
 
 .header{
     width: 100%;
-    height: 85px;
     background-color: #fff;
     position: fixed;
     cursor: pointer;
-    z-index: 1000;   
+    z-index: 1000;  
+    box-shadow:0 10px 100px rgba(0,0,0,.1);
 }
 
 .header__container{
     font-weight: bold;
     font-size: medium;
     display: flex;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
 }
 
 /*
@@ -48,6 +48,10 @@ a:hover{color: #facf0f}
     display: flex;
     margin-top: 35px;
 }
+
+/*@media only screen and (max-width: 37em){
+    .header__container{width: 100%}
+}*/
 
 @media only screen and (max-width: 37em){
     .header__rightSection--mainMenu{display:none};
@@ -78,11 +82,11 @@ a:hover{color: #facf0f}
 .header__smallmenu{    
     width: 100%;
     box-shadow:0 5px 5px 0 rgba(0,0,0,.1);
-    visibility: hidden;
+    display:none;
 }
 
 .header__smallmenu--active{
-    visibility: hidden;
+    display: block;
     opacity:0;
 }
 
@@ -173,6 +177,12 @@ a:hover{color: #facf0f}
 
 .introduction_introText{
     margin-bottom: 60px;
+    
+    text-align:justify;
+}
+
+@media only screen and (max-width: 37em){
+    .introduction_introText {padding: 0 20px 0 20px}
 }
 
 .introduction_introText p{
@@ -232,6 +242,11 @@ a:hover{color: #facf0f}
     margin-bottom: 100px;
 }
 
+@media only screen and (max-width: 37em){
+    .about-me_title p{padding: 20px}
+}
+
+
 .about-me_description{
     width: 100%;
     display: flex;
@@ -276,6 +291,10 @@ a:hover{color: #facf0f}
     width: 650px;
 }
 
+@media only screen and (max-width: 37em){
+    .about-me_description__myskills{padding: 20px}
+}
+
 /* Introduction section
 -------------------------------------------------------------------------*/
 .projects{
@@ -300,7 +319,7 @@ a:hover{color: #facf0f}
     justify-content: center;
 }
 
-.projects__container div{
+.projects__container div{  
     width: 400px;
     height: 400px;
     border: 2px solid black;
@@ -323,6 +342,10 @@ a:hover{color: #facf0f}
     font-weight: 600;
 }
 
+.contact__desc p{
+    padding: 0 5px 0 5px;
+}
+
 .contact__form{
     background-color: #fff;
     border-radius: 5px;
@@ -340,11 +363,11 @@ a:hover{color: #facf0f}
 }
 
 @media only screen and (max-width:37em){
-    .contact__form{width: 95%;}
+    .contact__form{width: 90%;}
     .contact__form-submit{text-align: center; width: 100%}
     .contact__form-input{width: 85%;}
     .contact__form-field{width: 85%;}
-    .contact__form-label{width:95%}
+    .contact__form-label{width:90%}
 }
 
 .contact__form-field{
@@ -352,8 +375,7 @@ a:hover{color: #facf0f}
     margin: auto;
 }
 
-.contact__form-input{
-    
+.contact__form-input{   
     margin: auto;
     width: 95%;
     line-height: 2;
@@ -406,12 +428,6 @@ textarea{
     width: 610px;  
 }
 
-@media only screen and (max-width:37em){
-    .footer__container{
-        width: 340px;
-    }
-}
-
 .footer__upperSection--socialicons{
     display: flex;
     float: right;
@@ -440,4 +456,13 @@ textarea{
 
 .footer__copyright div hr{
     width: 93%;
+}
+
+@media only screen and (max-width:37em){
+    .footer__container{
+        width: 100%;
+    }
+    .footer__upperSection--social h3{
+        margin-left: 220px;
+    }
 }
